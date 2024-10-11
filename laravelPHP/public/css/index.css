@@ -1,0 +1,48 @@
+.hex-container {
+    margin: 15px;
+    position: relative;
+    width: 600px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+}
+
+.hex {
+    width: 120px; /* Width of each hexagon */
+    height: 69.28px; /* Height calculated using (width * sqrt(3)/2) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+    border: 1px solid #000;
+}
+.hex p {
+    font-size: 2rem;
+}
+
+/* Position the hexagons for correct layout */
+.hex:nth-child(1)  { top: 0; left: 120px; }   /* 1 */
+.hex:nth-child(2)  { top: 0px; left: 240px; }  /* 2 */
+.hex:nth-child(3)  { top: 0px; left: 360px; } /* 3 */
+.hex:nth-child(4)  { top: 70px; left: 60px; }    /* 4 */
+.hex:nth-child(5)  { top: 70px; left: 180px; }  /* 5 */
+.hex:nth-child(6)  { top: 70px; left: 300px; } /* 6 */
+.hex:nth-child(7)  { top: 70px; left: 420px; } /* 7 */
+.hex:nth-child(8)  { top: 140px; left: 0px; } /* 8 */
+.hex:nth-child(9)  { top: 140px; left: 120px; }  /* 9 */
+.hex:nth-child(10) { top: 140px; left: 240px; } /* 10 */
+.hex:nth-child(11) { top: 140px; left: 360px; } /* 11 */
+.hex:nth-child(12) { top: 140px; left: 480px; } /* 12 */
+.hex:nth-child(13) { top: 210px; left: 60px; } /* 13 */
+.hex:nth-child(14) { top: 210px; left: 180px; } /* 14 */
+.hex:nth-child(15) { top: 210px; left: 300px; } /* 15 */
+.hex:nth-child(16) { top: 210px; left: 420px; } /* 16 */
+.hex:nth-child(17) { top: 280px; left: 120px; } /* 17 */
+.hex:nth-child(18) { top: 280px; left: 240px; } /* 18 */
+.hex:nth-child(19) { top: 280px; left: 360px; } /* 19 */
